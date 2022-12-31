@@ -14,6 +14,6 @@ const diasTotales = (inicio, hoy) => {
 
 const diasDesde = diasTotales(inicio,hoy);
 
-p_dias.innerHTML = `Hoy llevamos juntos ${diasDesde} y siempre que regreses aqui recuerda que estare aqui para lo que sea, te hare feliz y te protegere siempre, en las buenas y en las malas, aqui estoy siempre para ti, por siempre tuyo ramsio&#128147;`;
+p_dias.innerHTML = `Hoy llevamos juntos ${diasDesde} dias y siempre que regreses aqui recuerda que estare aqui para lo que sea, te hare feliz y te protegere siempre, en las buenas y en las malas, aqui estoy siempre para ti, por siempre tuyo ramsio&#128147;`;
 
 console.log("Es una de las paginas a las cuales me he esforzado por hacer practicamente desde algo cero y puesto mucho atencion, te amo hoy por siempre y mañana mas &#128147;")
