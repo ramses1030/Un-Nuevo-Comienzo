@@ -50,10 +50,46 @@
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
             <div class="full">
               <div class="center-desk">
-                <audio controls>
-                  <source src="images/Danny Ocean - Ley universal (VISUALIZER).mp3" type="audio/mpeg">
-                  Tu navegador no soporta el elemento de audio.
-              </audio>
+                <div class="audio-container">
+                  <audio controls id="audioElement">
+                      <source preload="auto" src="images/Danny Ocean - Ley universal (VISUALIZER).mp3" type="audio/mpeg">
+                  </audio>
+                  <button id="playButton">Reproducir Audio</button>
+              </div>
+          
+              <script>
+                  const audio = document.getElementById('audioElement');
+                  const playButton = document.getElementById('playButton');
+          
+                  playButton.addEventListener('click', () => {
+                      audio.play();
+                  });
+              </script>
+              
+              <style>
+                /* Estilo para el contenedor del reproductor de audio */
+                .audio-container {
+                    background-color: #7D2181; /* Color de fondo */
+                    padding: 20px; /* Espacio alrededor del reproductor */
+                    border-radius: 10px; /* Bordes redondeados */
+                    text-align: center; /* Centra el contenido */
+                    color: white; /* Color del texto */
+                }
+        
+                button {
+                    margin-top: 10px; /* Espacio entre el reproductor y el botón */
+                    padding: 10px 20px; /* Espacio dentro del botón */
+                    background-color: white; /* Color de fondo del botón */
+                    color: #7D2181; /* Color del texto del botón */
+                    border: none; /* Sin borde */
+                    border-radius: 5px; /* Bordes redondeados */
+                    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+                }
+                
+                button:hover {
+                    background-color: #ddd; /* Color del botón al pasar el mouse */
+                }
+            </style>
                 
               </div>
             </div>
